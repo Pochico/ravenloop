@@ -1,0 +1,42 @@
+.charts-container {
+  overflow-y: scroll;
+  width: 80%;
+  padding: 4rem;
+  display: none;
+}
+
+.charts-container.active {
+  display: block;
+}
+
+.charts-container__title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.charts-container__channel-name {
+  position: relative;
+  margin: 0;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.charts-container__channel-name::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  height: 1px;
+  width: 70%;
+  background-color: #ffffffcc;
+}
+
+@media screen and (max-width: 768px) {
+  .charts-container {
+    padding: 0;
+  }
+  .charts-container canvas {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,44 @@
+.search-channel {
+  display: flex;
+}
+
+.search-channel input,
+.search-channel button {
+  height: 41px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.search-channel input {
+  border-radius: 1rem 0 0 1rem;
+}
+.search-channel input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-channel button {
+  border-radius: 0 1rem 1rem 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+.search-channel button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.search-channel button:active {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .search-channel {
+    flex-direction: column;
+  }
+  .search-channel input {
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+  }
+  .search-channel button {
+    border-radius: 0 0 1rem 1rem;
+  }
+}

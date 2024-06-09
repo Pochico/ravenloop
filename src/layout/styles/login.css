@@ -1,0 +1,67 @@
+.login-form {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+  min-width: 300px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.login-form .login-body__form-group {
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+.login-form .login-body__form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form .login-body__form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.login-form .login-body__form-group input.animated {
+  animation-name: pulse;
+}
+
+/* Create animation pulse which has a pulsing shadow and white border*/
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 6px 12px rgba(255, 255, 255, 0);
+  }
+}
+
+.login-form button {
+  padding: 10px;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  margin-top: auto;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.4);
+}

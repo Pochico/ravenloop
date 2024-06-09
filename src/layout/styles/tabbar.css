@@ -1,0 +1,42 @@
+.tabbar-menu {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  width: 60%;
+}
+
+.tabbar-menu h3 {
+  position: relative;
+  padding: 1rem;
+}
+
+.tabbar-menu h3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.3s;
+}
+
+.tabbar-menu h3.active::before {
+  width: 100%;
+  background-color: white;
+}
+
+.tabbar-menu h3:hover::before {
+  width: 100%;
+  cursor: pointer;
+  background-color: black;
+}
+
+.tabbar-menu h3:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .tabbar-menu {
+    gap: 0;
+  }
+}
